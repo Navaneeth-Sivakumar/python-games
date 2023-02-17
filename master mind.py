@@ -15,6 +15,10 @@ l_=str(random.randint(10000,99999))
 for j in range (c_):
     l=(input('enter 5 the digits : \n'))
     for k in range (5):
+        if l==l_:
+            print('<<<<<<<<.....you won!!!!....>>>>>>>>')
+            break
+            
         if int(l[k])==int(l_[k]):
             print('+',end='')
             
@@ -24,10 +28,6 @@ for j in range (c_):
         elif l[k] in l_:
             print('.',end='')
             
-        if l==l_:
-            print('<<<<<<<<.....you won!!!!....>>>>>>>>')
-            break
-
     if l==l_:
         break
     print('\n')
